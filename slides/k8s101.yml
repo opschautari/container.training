@@ -1,0 +1,40 @@
+title: |
+  Kubernetes 101
+
+chat: "[Etherpad](https://etherpad.wikimedia.org/p/k8s101-training-notes)"
+
+gitrepo: github.com/opschautari/container.training
+
+slides: orginal http://container.training/
+
+slidenumberprefix: "#opschautari &mdash; "
+
+exclude:
+- self-paced
+
+content:
+- shared/title.md
+#- opschautari/logistics.md
+- shared/toc.md
+-
+  - opschautari/pre-requisite.md
+  - opschautari/our_sample_application.md
+  - opschautari/kubernetes_concept.md
+#   - opschautari/kubectl_first_contact.md
+#   - k8s/kubectl-run.md
+# -
+#   - opschautari/concepts_deep_dive.md 
+#   - opschautari/declarative_vs_imperative.md
+#   - opschautari/k8s_network_model.md
+# -
+#   - opschautari/deployment_with_yml.md 
+#   - opschautari/scaling_our_app.md 
+#   - opschautari/labels_and_selectors.md 
+#   - opschautari/rolling_updates.md 
+# -
+#   - opschautari/advance_section.md 
+#   - opschautari/security.md 
+#   - opschautari/auth.md 
+#   - opschautari/daemonsets.md 
+#   - shared/thankyou.md
+#   - containers/links.md
