@@ -18,8 +18,8 @@ content:
 - shared/toc.md
 -
   - opschautari/pre-requisite.md
-  - opschautari/our_sample_application.md
   - opschautari/kubernetes_concept.md
+  - opschautari/our_sample_application.md
 #   - opschautari/kubectl_first_contact.md
 #   - k8s/kubectl-run.md
 # -
