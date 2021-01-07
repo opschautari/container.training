@@ -321,6 +321,20 @@ class: extra-details
   *Probably not (in the future)*
 
 .footnote[More information about CRI [on the Kubernetes blog](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes)]
+---
+
+## Docker-Compose and Kubernetes
+
+- docker-compose is a simple yet super handy tool to define your entire services in a single yaml file.
+- It makes running container way easier compared to `docker run app -p 2335:3243...` 
+  All you need are simple commands like `docker-compose up` and your whole stack is up.
+- docker-compose is used for development as well as deployments but
+
+- to orchestrate (deploy services gracefully, make it heal on failures, scale up/down well...) docker-compose needs extra efforts compared to k8s
+
+- k8s is an orchestration tool, built from ground up with these fundamentals
+
+- we will explore them as we progress.
 
 ---
 

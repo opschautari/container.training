@@ -11,6 +11,7 @@ slidenumberprefix: "#opschautari &mdash; "
 
 exclude:
 - self-paced
+- extra-details
 
 content:
 - shared/title.md
