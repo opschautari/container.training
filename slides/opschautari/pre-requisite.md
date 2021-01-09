@@ -16,8 +16,22 @@
     <br/>
     (even if it's a `FROM` line and a couple of `RUN` commands)
 
-- It's totally OK if you are not a Docker expert!
+- It's totally OK if you are not a Docker expert!!
 
+---
+## Dockerfile
+
+```json
+FROM nginx
+ENV AUTHOR=Docker
+
+WORKDIR /usr/share/nginx/html
+COPY Hello_docker.html /usr/share/nginx/html
+
+CMD cd /usr/share/nginx/html && sed -e s/Docker/"$AUTHOR"/ Hello_docker.html > index.html ; nginx -g 'daemon off;'
+
+```
+src: https://github.com/docker/labs/blob/master/beginner/static-site/Dockerfile
 ---
 
 class: title
@@ -48,7 +62,7 @@ Misattributed to Benjamin Franklin
 
 - This is the stuff you're supposed to do!
 
-- Go to @@SLIDES@@ to view these slides
+<!-- - Go to @@SLIDES@@ to view these slides -->
 
 <!-- ```open @@SLIDES@@``` -->
 
@@ -79,3 +93,12 @@ class: in-person
 - We would jump around different good resources on internet, like [katakoda](https://www.katacoda.com/courses/kubernetes), [okteto](https://okteto.com/), play-with-docker, [play-with-kubernetes](https://labs.play-with-k8s.com/)
 
 - In civo, though we can't ssh to servers, they provide k8s plane close to cluster we get on managed services 
+
+---
+## Credits
+
+ - These course material is forked from [container.training](https://github.com/jpetazzo/container.training)
+ - As it is best resource out there
+ - We have made adjustments on it for our need
+ - Super thankful for [Jérôme Petazzoni](https://github.com/jpetazzo) and team
+ - Original materials are published here: https://container.training 

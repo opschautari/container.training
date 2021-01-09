@@ -18,13 +18,13 @@
 
   - API backend
 
-  - database (that we will keep out of Kubernetes for now)
+  - database (yes you can do it inside k8s)
 
-- We have built images for our frontend and backend components
+- We need to build images for our frontend and backend components
 
   (e.g. with Dockerfiles and `docker build`)
 
-- We are running them successfully with a local environment
+- Then we could run them in local with environment
 
   (e.g. with Docker Compose)
 
@@ -220,8 +220,6 @@ class: extra-details
 
 ---
 
-class: extra-details
-
 ## How many nodes should a cluster have?
 
 - There is no particular constraint
@@ -250,7 +248,6 @@ class: extra-details
 
 No!
 
---
 - Kubernetes from release 1.22 is depreciating docker runtime 
   https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/
 
@@ -288,7 +285,6 @@ class: extra-details
 
 Yes!
 
---
 
 - In this workshop, we run our app on a single node first
 
@@ -328,9 +324,9 @@ class: extra-details
 - docker-compose is a simple yet super handy tool to define your entire services in a single yaml file.
 - It makes running container way easier compared to `docker run app -p 2335:3243...` 
   All you need are simple commands like `docker-compose up` and your whole stack is up.
-- docker-compose is used for development as well as deployments but
+- docker-compose is used for development as well as deployments but...
 
-- to orchestrate (deploy services gracefully, make it heal on failures, scale up/down well...) docker-compose needs extra efforts compared to k8s
+- to orchestrate (deploy services gracefully, make it heal on failures, scale up/down well) docker-compose needs extra efforts compared to k8s
 
 - k8s is an orchestration tool, built from ground up with these fundamentals
 
