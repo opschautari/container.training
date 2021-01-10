@@ -4,7 +4,7 @@
 
 - This is the app we are going to run as docker-container with docker-compose and then learn to deploy them to kubernetes 
 
-- For ease, you could create account on [play-with-docker](https://labs.play-with-k8s.com/) where you get some hours of sandbox instance to try these quick.
+- For ease, you could create account on [play-with-docker](https://labs.play-with-docker.com/) where you get some hours of sandbox instance to try these quick.
 
 .exercise[
 
