@@ -10,7 +10,7 @@
 
 - Clone the repository:
   ```bash
-  git clone https://github.com/dockersamples/example-voting-app
+  git clone https://github.com/opschautari/example-voting-app
   ```
 
 ]
