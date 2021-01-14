@@ -21,7 +21,8 @@ content:
   - opschautari/pre-requisite.md
   - opschautari/kubernetes_concept.md
   - opschautari/our_sample_application.md
-#   - opschautari/kubectl_first_contact.md
+  - opschautari/kubectl_first_contact.md
+  - opschautari/exploring_kubernetes_resources.md
 #   - k8s/kubectl-run.md
 # -
 #   - opschautari/concepts_deep_dive.md 
