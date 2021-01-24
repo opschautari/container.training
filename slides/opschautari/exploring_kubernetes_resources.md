@@ -57,6 +57,25 @@ class: pic
   - namespace
   
 ---
+## Assignment#2
+
+- Create a pod with yaml file with following specification:
+  - labels: { app=frontend, version=10 }
+  - first container:
+    - use image busybox and run this command
+      - "date > /tmp/date.txt && sleep 5s"
+  - second container:
+    - use image nginx
+    - nginx should render /tmp/date.txt output
+    - you can use alternative path: /usr/share/nginx/html/index.html 
+      
+- Guideline: in case if you are confused.
+  - create individual containers first
+  - pod-busybox.yml and pod-nginx.yml
+  - combine the yml file 
+  - kubectl apply -f combined.yml 
+
+---
 ## Labels 
   - [labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) are arbitrary key/value pairs attached to objects{like pods, deployments,...}
   - they enable users to map their own organizational structures onto the k8s system objects
